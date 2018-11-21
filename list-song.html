@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Listen to music || Song I Like</title>
+    <meta property="og:url"
+          content="https://tooeasy2get2points.herokuapp.com/list-song.html"/>
+    <meta property="og:type" content="song"/>
+    <meta property="og:title" content="Listen to music || Song I Like"/>
+    <meta property="og:description" content="Listen to your music"/>
+    <meta property="og:image"
+          content="https://tooeasy2get2points.herokuapp.com/img/share-home.png"/>
+    <link rel="icon" type="image/png" href="img/myfavicon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1>Song i like</h1>
+<ul>
+    <li><a href="register.html" title="Register member">Register</a></li>
+    <li><a href="login.html" title="Member login">Login</a></li>
+    <li><a href="save-song.html" title="Create Song">Create Song</a></li>
+    <li><a href="list-song.html" title="Latest Song">Latest Song</a></li>
+    <li><a href="my-song.html" title="My Song">My Song</a></li>
+</ul>
+<div class="song-player">
+    <div class="song-detail">
+        <marquee behavior="scroll" direction="left">
+            <div class="current-song-title">
+                <span id="current-play-title"></span>
+            </div>
+        </marquee>
+    </div>
+    <div class="player">
+        <audio controls id="my-mp3" autoplay>
+            <source src="" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</div>
+<div class="list-song" id="list-song">
+</div>
+<script src="js/config.js"></script>
+<script src="js/list-song.js"></script>
+</body>
+</html>

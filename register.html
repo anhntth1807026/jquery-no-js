@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register Account || Song I Like</title>
+    <meta property="og:url"
+          content="https://tooeasy2get2points.herokuapp.com"/>
+    <meta property="og:type" content="song"/>
+    <meta property="og:title" content="Register Account || Song I Like"/>
+    <meta property="og:description" content="Create an account and share your song"/>
+    <meta property="og:image"
+          content="https://tooeasy2get2points.herokuapp.com/img/share-home.png"/>
+    <link rel="icon" type="image/png" href="img/myfavicon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1>Register form</h1>
+<ul>
+    <li><a href="register.html" title="Register member">Register</a></li>
+    <li><a href="login.html" title="Member login">Login</a></li>
+    <li><a href="save-song.html" title="Create Song">Create Song</a></li>
+    <li><a href="list-song.html" title="Latest Song">Latest Song</a></li>
+    <li><a href="my-song.html" title="My Song">My Song</a></li>
+</ul>
+<div>
+    <form action="" name="register-form" id="contenForm">
+        <div>
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstName" id="firstname">
+        </div>
+        <div>
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastName" id="lastname">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div>
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" name="confirm-password" id="confirmPassword">
+        </div>
+        <div>
+            <label for="address">Address</label>
+            <textarea name="address" id="address" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="phone">Phone</label>
+            <input type="text" name="phone" id="phone">
+        </div>
+        <div>
+            <label for="avatar">Avatar</label>
+                <input type="text" name="avatar" id="avatar">
+        </div>
+        <div>
+            <label>Gender</label>
+            <select name="gender">
+                <option value="1">Male</option>
+                <option value="0">Female</option>
+                <option value="2">Other</option>
+            </select>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label>Birthday</label>
+            <input type="date" name="birthday">
+        </div>
+        <div>
+            <input type="button" name="btn-submit" value="Submit">
+            <input type="reset" name="btn-reset" value="Reset">
+        </div>
+    </form>
+</div>
+<script src="../jquery-3.3.1.min.js"></script>
+<script src="../jquery.validate.min.js"></script>
+<script src="../additional-methods.min.js"></script>
+<script src="config.js"></script>
+<script src="register.js"></script>
+</body>
+</html>

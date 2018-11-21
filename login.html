@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Account || Song I Like</title>
+    <meta property="og:url"
+          content="https://tooeasy2get2points.herokuapp.com/login.html"/>
+    <meta property="og:type" content="song"/>
+    <meta property="og:title" content="Register Account || Song I Like"/>
+    <meta property="og:description" content="Login and share your song"/>
+    <meta property="og:image"
+          content="https://tooeasy2get2points.herokuapp.com/img/share-home.png"/>
+    <link rel="icon" type="image/png" href="img/myfavicon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1>Login form</h1>
+<ul>
+    <li><a href="register.html" title="Register member">Register</a></li>
+    <li><a href="login.html" title="Member login">Login</a></li>
+    <li><a href="save-song.html" title="Create Song">Create Song</a></li>
+    <li><a href="list-song.html" title="Latest Song">Latest Song</a></li>
+    <li><a href="my-song.html" title="My Song">My Song</a></li>
+</ul>
+<div>
+    <form action="" name="login-form">
+        <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" required>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input id="password" type="password" name="password" required>
+        </div>
+        <div>
+            <input type="button" name="btn-submit" value="Submit">
+            <input type="reset" name="btn-reset" value="Reset">
+        </div>
+    </form>
+</div>
+<script src="../jquery-3.3.1.min.js"></script>
+<script src="../jquery.validate.min.js"></script>
+<script src="../additional-methods.min.js"></script>
+<script src="config.js"></script>
+<script src="login.js"></script>
+</body>
+</html>

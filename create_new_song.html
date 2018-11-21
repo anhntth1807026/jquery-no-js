@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sunshine's Playlist</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 50px;
+        }
+
+        form {
+            border: 3px solid #f1f1f1;
+        }
+        .form-group{
+            margin: 10px;
+            padding: 10px;
+        }
+        .container{
+            padding-top: 50px;
+        }
+
+        input[type=text], input[type=submit], input[type=reset]{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar">
+    <div class="menu">
+        <ul>
+            <li><a href="my-song.html" title="My Song">My Song</a></li>
+            <li><a href="create_new_song.html" title="Create Song">Create Song</a></li>
+            <li><a href="save-song.html" title="Lastest Song">Lastest Song</a></li>
+            <li><a href="login.html" title="Member Login">Login</a></li>
+            <li><a href="register.html" title="Register member">Register</a></li>
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <h2>Create Song</h2>
+    <form action="" name="register-form" id="create-form">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" name="name" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Singer</label>
+            <input type="text" name="singer" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Description</label>
+            <input type="text" name="description" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Author</label>
+            <input type="text" name="author" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Thumbnail</label>
+            <input type="text" name="thumbnail" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Link</label>
+            <input type="text" name="link" class="form-control">
+        </div>
+        <div class="form-group">
+            <label> </label>
+            <input type="submit" name="btn-submit" value="Submit" class="form-control">
+            <input type="reset" name="reset" class="form-control">
+        </div>
+    </form>
+</div>
+<script src="../jquery-3.3.1.min.js"></script>
+<script src="../jquery.validate.min.js"></script>
+<script src="../additional-methods.min.js"></script>
+<script src="config.js"></script>
+<script src="create_song.js"></script>
+</body>
+</html>
